@@ -524,6 +524,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
+    libantradio \
     libgpustats \
     libsdm-disp-vndapis \
     libthermalclient \
