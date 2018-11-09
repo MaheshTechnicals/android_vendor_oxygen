@@ -531,7 +531,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     ims \
-    CNEService \
     QtiTelephonyService \
     qcrilmsgtunnel \
     TimeService \
