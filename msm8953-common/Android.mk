@@ -33,7 +33,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libantradio
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/libantradio.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libantradioso
+LOCAL_SRC_FILES_32 := proprietary/lib/libantradio.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
