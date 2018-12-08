@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
-    vendor/xiaomi/msm8953-common/proprietary/lib/libqminvapi.so:system/lib/libqminvapi.so \
-    vendor/xiaomi/msm8953-common/proprietary/lib64/libqminvapi.so:system/lib64/libqminvapi.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libqminvapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqminvapi.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libqminvapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqminvapi.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
