@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := vendor/xiaomi/miuicamera
+VENDOR_PATH := vendor/xiaomi/Miuicamera
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
 
 PRODUCT_PACKAGES += \
-    MiuiCamera
+    Miuicamera
 
 # MiuiCamera
 PRODUCT_PROPERTY_OVERRIDES += \
