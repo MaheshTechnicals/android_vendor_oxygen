@@ -40,20 +40,6 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := audio.primary.msm8953
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/hw/audio.primary.msm8953.so
-#LOCAL_SRC_FILES_32 := proprietary/vendor/lib/hw/audio.primary.msm8953.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_MODULE_SUFFIX := .so
-#LOCAL_MODULE_RELATIVE_PATH := hw
-#LOCAL_VENDOR_MODULE := true
-#LOCAL_OVERRIDES_PACKAGES := audio.primary.msm8953
-#include $(PREBUILT_SHARED_LIBRARY)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libbtnv
 LOCAL_MODULE_OWNER := xiaomi
@@ -64,52 +50,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := libdisplayconfig
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libdisplayconfig.so
-#LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdisplayconfig.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_MODULE_SUFFIX := .so
-#include $(BUILD_PREBUILT)
-
-
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := libqdMetaData
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES_64 := proprietary/lib64/libqdMetaData.so
-#LOCAL_SRC_FILES_32 := proprietary/lib/libqdMetaData.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_MODULE_SUFFIX := .so
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := libqservice
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES_64 := proprietary/lib64/libqservice.so
-#LOCAL_SRC_FILES_32 := proprietary/lib/libqservice.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_MODULE_SUFFIX := .so
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := libqdutils
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES_64 := proprietary/lib64/libqdutils.so
-#LOCAL_SRC_FILES_32 := proprietary/lib/libqdutils.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_MODULE_SUFFIX := .so
-#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqminvapi 
@@ -227,18 +167,27 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := CNEService
-#LOCAL_MODULE_OWNER := xiaomi
-#LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_PRIVILEGED_MODULE := true
-#include $(BUILD_PREBUILT)
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdCommon
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
